@@ -17,7 +17,12 @@ logs/: logs de execução
 docs/: documentação técnica
 tests/: todos os tipos de teste a ser feito
 
+## Estrutura do banco de dados
 
+- `bruto`: dados brutos das APIs
+- `tratado`: dados limpos e estruturados
+- `analitico`: dados agregados para análise
+- `controle`: auditoria e execução do pipeline
 
 Tecnologias
 
