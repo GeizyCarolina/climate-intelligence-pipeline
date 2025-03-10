@@ -21,5 +21,5 @@ CREATE TABLE [controle].[execucoes_pipeline](
 GO
 
 
-ALTER TABLE [controle].[execucoes_pipeline] ADD  DEFAULT (sysdatetime()) FOR [data_registro]
+ALTER TABLE [controle].[execucoes_pipeline] ADD  DEFAULT (getdate()) FOR [data_registro]
 GO

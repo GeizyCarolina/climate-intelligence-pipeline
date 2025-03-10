@@ -1,4 +1,4 @@
-from conexao import criar_conexao
+from src.conexao import criar_conexao
 
 def carregar_cidades(dados_cidades):
     conexao = criar_conexao() # conexão com o banco de dados
@@ -23,14 +23,12 @@ def carregar_cidades(dados_cidades):
             
         else:   
             print(f"Falha ao inserir a cidade: {cidade['nome_cidade']}")
+            return False
 
-
-    print(f"{quantidade_inserida} cidade(s) inserida(s) com sucesso.")
     conexao.commit() # confirma as alterações no banco
     cursor.close() # fecha o cursor 
 
     return quantidade_inserida
-
 
 
 

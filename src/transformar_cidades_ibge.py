@@ -24,5 +24,6 @@ def transformar_cidades(dados_cidades):
         }
 
         cidades_transformadas.append(dados)
+        qnt_dados = cidades_transformadas.__len__()
 
-    return cidades_transformadas
+    return cidades_transformadas, qnt_dados
