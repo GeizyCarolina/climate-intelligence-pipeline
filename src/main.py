@@ -5,9 +5,9 @@ from logs.logger import configurar_logger
 from logs.registro_logs import log_inicio_execucao_pipeline, log_fim_execucao_pipeline
 from src.config import NOME_PIPELINE
 from src.conexao import criar_conexao
-from src.extrair_cidades_ibge import extrair_cidades
-from src.transformar_cidades_ibge import transformar_cidades  
-from src.carregar_cidades_ibge import carregar_cidades  
+from src.cidade.extrair_cidades_ibge import extrair_cidades
+from src.cidade.transformar_cidades_ibge import transformar_cidades  
+from src.cidade.carregar_cidades_ibge import carregar_cidades  
 
 
 def main():
