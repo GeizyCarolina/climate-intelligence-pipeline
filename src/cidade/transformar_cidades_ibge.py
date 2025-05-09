@@ -4,7 +4,7 @@ import json
 
 def transformar_cidades(dados_cidades):
     
-    #listta
+    #lista
     cidades_transformadas = []
     
     # percorrer a api do json

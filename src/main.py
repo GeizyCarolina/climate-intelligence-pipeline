@@ -8,7 +8,8 @@ from src.conexao import criar_conexao
 from src.cidade.extrair_cidades_ibge import extrair_cidades
 from src.cidade.transformar_cidades_ibge import transformar_cidades  
 from src.cidade.carregar_cidades_ibge import carregar_cidades  
-
+from src.coordenadas.extrair_coordenadas import list_cidades, get_coordenada
+from src.coordenadas.transformar_coordenadas import transformar_coordenadas
 
 def main():
     logger = configurar_logger()
@@ -52,5 +53,9 @@ def main():
 
 
 
+def coordenada():
+    
+    print(json.dumps(transformar_coordenadas(), indent=4, ensure_ascii=False))
+
 if __name__ == "__main__":    
-    main()
+    coordenada()
